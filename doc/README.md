@@ -87,3 +87,15 @@ Quindi nel file bundles.php aggiungiamo:
 
 Facciamo un commit con un tag '002-inst_solido'
 
+aggiungiamo il file di configurazione della libreria:
+
+config/packages/solido.yaml
+
+come indicato in questo file:
+
+>  dto:
+>   namespaces:
+>       - 'App\DTO'
+
+Creiamo i file che si occuperanno di implementare le API:
+

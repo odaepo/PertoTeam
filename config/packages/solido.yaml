@@ -2,14 +2,14 @@ solido:
   # Whether to enable test features
   #*test:                 false
   form:
-    # Register form data mapper for all forms in the project
-    register_data_mapper: true
-    # Register the auto-submit extension for all forms
-    auto_submit: true
+    # Register form data mapper for all forms in the project (true disabilita la prima parte)
+    register_data_mapper: false
+    # Register the auto-submit extension for all forms (true: fa il submit della request)
+    auto_submit: false
 
   # Enables the request processing features (Accept header parsing, versioning guessing)
   request:
-    #*enabled: true
+    #*enabled: true (false:
     versioning:
       #*enabled: true
       # Can be "accept", "custom_header" or a service id

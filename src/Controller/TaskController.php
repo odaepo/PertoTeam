@@ -53,9 +53,13 @@ class TaskController extends AbstractController
      */
     public function show(Task $task): Response
     {
+        $r=new Response('',200, array('content-type'=>'text/html'));
+
         return $this->render('task/show.html.twig', [
             'task' => $task,
-        ]);
+        ],
+            $r
+        );
     }
 
     /**
