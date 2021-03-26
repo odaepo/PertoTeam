@@ -1,0 +1,116 @@
+solido:
+  # Whether to enable test features
+  #*test:                 false
+  form:
+    # Register form data mapper for all forms in the project
+    register_data_mapper: true
+    # Register the auto-submit extension for all forms
+    auto_submit: true
+
+  # Enables the request processing features (Accept header parsing, versioning guessing)
+  request:
+    #*enabled: true
+    versioning:
+      #*enabled: true
+      # Can be "accept", "custom_header" or a service id
+      guesser: custom_header
+      custom_header_name: X-API-Version
+    # Set the default mime type if no Accept header is present on the request
+    #*default_mime_type: application/json
+
+
+    # Sets the acceptable MIME types for Accept header
+    #*priorities
+      # Defaults:
+      #- application/json
+      #- application/x-json
+      #- text/xml
+      #- application/xml
+      #- application/x-xml
+
+  # Whether to enable or not the body converter component
+  #*body_converter:
+  #*  enabled: true
+
+  # Enables the automatic serialization of views and data returned from controllers
+  #serializer:
+    #enabled: true
+    #
+    # The serializer id (must implement Solido\Serialization\SerializerInterface)
+    #id:                   ~
+    #charset:              UTF-8
+    #groups:
+      #
+      # Default:
+      #- Default
+    #catch_exceptions:     true
+  #data_transformers:
+  #  date_time:
+      # Default output timezone for date time data transformer
+      #timezone:             null
+  cors:
+    max_age: 3600
+    allow_headers:
+      - Accept
+      - Authorization
+      - Content-Type
+      - X-Order
+      - Range
+      - sentry-trace
+
+    expose_headers:
+      - X-Total-Count
+      - X-Continuation-Token
+    #enabled:              true
+    #allow_credentials:    true
+    #allow_origin:
+    #
+    #  # Default:
+    #  - *
+    #allow_headers:        []
+    #expose_headers:
+    #  0
+    #paths:
+    #
+    #  # Prototype
+    #  -
+    #    enabled:              true
+    #    allow_credentials:    ~
+    #    host:                 ~
+    #    path:                 ~ # Required
+    #    allow_origin:         []
+    #    allow_headers:        []
+    #    expose_headers:       []
+    #    max_age:              ~
+
+  # Configure DTO management component and automatically register dto service locator registry
+  dto:
+    namespaces:
+      - 'App\DTO'
+
+    #routing:
+
+      # Whether to register the dto routing loader
+      #loader: true
+
+      # List of enhanced DTO namespaces
+      #namespaces: [ ] # Required
+
+      # List of interfaces excluded by dto resolvers
+      #exclude: [ ]
+
+  serializer:
+    catch_exceptions: true
+
+  urn:
+    #enabled: true
+    # The URN default domain
+    default_domain: 'solido-example'
+
+  #security:
+    #action_listener:
+      #enabled:              false
+      #prefix:               ~
+    #policy_checker:
+      #enabled:              false
+      #service:              ~
