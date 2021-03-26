@@ -57,3 +57,6 @@ e creare le tabelle:
 > 
 > ./bin/console doctrine:migrations:migrate
 
+#Inizio 
+Una volta creato l'ambiente possiamo concentrarci nella creazione delle API.
+il codice fino ad ora scritto e' stato taggato con '001-APIstart'
