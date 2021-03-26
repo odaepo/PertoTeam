@@ -59,4 +59,31 @@ e creare le tabelle:
 
 #Inizio 
 Una volta creato l'ambiente possiamo concentrarci nella creazione delle API.
-il codice fino ad ora scritto e' stato taggato con '001-APIstart'
+il codice fino ad ora scritto e' stato taggato con '001-APIstart'.
+
+Iniziamo con l'installazione delle librerie necessarie.
+ Installiamo la libreria Solido e tutte le parti di cui si avra' bisogno:
+
+> composer require solido/solido
+
+installiamo il bundle che si occupa di integrare solid-o con symfony:
+
+> composer require solido/symfony
+
+e come indicato nella documentazione ufficiale (https://solid-o.github.io/docs/#/./symfony-integration?id=symfony-integration)
+aggiungiamo il bundle nella configurazione.
+Quindi nel file bundles.php aggiungiamo:
+
+>
+>return [
+> 
+>...
+> 
+>Solido\Symfony\SolidoBundle::class => ['all' => true],
+> 
+>];
+>
+>
+
+Facciamo un commit con un tag '002-inst_solido'
+

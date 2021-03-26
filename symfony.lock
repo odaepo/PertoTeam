@@ -85,6 +85,12 @@
     "friendsofphp/proxy-manager-lts": {
         "version": "v1.0.3"
     },
+    "justinrainbow/json-schema": {
+        "version": "5.2.10"
+    },
+    "kcs/class-finder": {
+        "version": "0.2.2"
+    },
     "laminas/laminas-code": {
         "version": "4.0.0"
     },
@@ -135,6 +141,45 @@
         "files": [
             "config/packages/sensio_framework_extra.yaml"
         ]
+    },
+    "solido/body-converter": {
+        "version": "v0.1.1"
+    },
+    "solido/common": {
+        "version": "v0.1.1"
+    },
+    "solido/cors": {
+        "version": "v0.1.1"
+    },
+    "solido/data-transformers": {
+        "version": "v0.1.1"
+    },
+    "solido/dto-management": {
+        "version": "v0.1.1"
+    },
+    "solido/pagination": {
+        "version": "v0.1.1"
+    },
+    "solido/patch-manager": {
+        "version": "v0.1.1"
+    },
+    "solido/query-language": {
+        "version": "v0.1.1"
+    },
+    "solido/security-policy-checker": {
+        "version": "v0.1.1"
+    },
+    "solido/serialization": {
+        "version": "v0.1.1"
+    },
+    "solido/solido": {
+        "version": "v0.1.0"
+    },
+    "solido/symfony": {
+        "version": "v0.1.1"
+    },
+    "solido/versioning": {
+        "version": "v0.1.1"
     },
     "symfony/asset": {
         "version": "v5.2.4"
@@ -506,6 +551,9 @@
     "symfony/yaml": {
         "version": "v5.2.5"
     },
+    "thecodingmachine/safe": {
+        "version": "v1.3.3"
+    },
     "twig/extra-bundle": {
         "version": "v3.3.0"
     },
@@ -514,5 +562,8 @@
     },
     "webmozart/assert": {
         "version": "1.10.0"
+    },
+    "willdurand/negotiation": {
+        "version": "3.0.0"
     }
 }
